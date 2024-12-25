@@ -20,3 +20,4 @@ E:\Sof\Sofiene\3GL\dotNET\projects\cwApi_Entreprise_dotNet\Models\obj\Debug\net8
 E:\Sof\Sofiene\3GL\dotNET\projects\cwApi_Entreprise_dotNet\Models\obj\Debug\net8.0\refint\Models.dll
 E:\Sof\Sofiene\3GL\dotNET\projects\cwApi_Entreprise_dotNet\Models\obj\Debug\net8.0\Models.pdb
 E:\Sof\Sofiene\3GL\dotNET\projects\cwApi_Entreprise_dotNet\Models\obj\Debug\net8.0\ref\Models.dll
+E:\Sof\Sofiene\3GL\dotNET\projects\cwApi_Entreprise_dotNet\Models\obj\Debug\net8.0\Models.sourcelink.json

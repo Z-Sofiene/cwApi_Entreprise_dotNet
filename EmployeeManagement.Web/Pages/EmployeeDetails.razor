@@ -1,0 +1,71 @@
+﻿@page "/EmployeeDetails/{id}"
+@page "/EmployeeDetails"
+@inherits EmployeeDetailsBase
+
+<h3 class="text-center my-4">Employee Details</h3>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #FF9500, #00048B);
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 1200px; /* Increased container width */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .imageThumbnail {
+        width: 4cm;
+        height: 4cm;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin: 35px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+
+    .btn {
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+</style>
+
+<div class="container">
+    <div class="row justify-content-center m-3">
+        <div class="col-md-8">
+            <!-- Adjusted column width -->
+            <div class="card text-center">
+                <div class="card-header">
+                    <h2><b><u>@Employee.FirstName @Employee.LastName</u></b></h2>
+                </div>
+                <div class="card-body">
+                    <img class="imageThumbnail" src="@Employee.PhotoPath" alt="Employee Photo" />
+                    <h4>Email : @Employee.Email</h4>
+                    <h4>Birthday : @Employee.DateOfBirth.ToShortDateString()</h4>
+                    <h4>Departement : @Employee.Department.DepartmentName</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="/EmployeeList" class="btn btn-primary m-1">Back</a>
+                    <a href="@($"editemployee/{Employee.EmployeeId}")" class="btn btn-warning m-1">Edit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

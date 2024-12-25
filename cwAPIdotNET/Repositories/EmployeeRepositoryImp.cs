@@ -18,7 +18,7 @@ public class EmployeeRepositoryImp : IEmployeeRepository
     // Employee CRUD operations
     public async Task<Employee> GetEmployeeByIdAsync(int employeeId)
     {
-        return await _context.Set<Employee>().FindAsync(employeeId);
+        return await _context.Employees.Include(e => e.Department).FirstOrDefaultAsync(e => e.EmployeeId == employeeId);
     }
 
     public async Task<IEnumerable<Employee>> GetAllEmployeesAsync()

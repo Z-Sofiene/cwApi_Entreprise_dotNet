@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/DepartmentApi": {
+    "/api/Department": {
       "get": {
         "tags": [
-          "DepartmentApi"
+          "Department"
         ],
         "responses": {
           "200": {
@@ -44,7 +44,7 @@
       },
       "post": {
         "tags": [
-          "DepartmentApi"
+          "Department"
         ],
         "requestBody": {
           "content": {
@@ -89,10 +89,10 @@
         }
       }
     },
-    "/api/DepartmentApi/{id}": {
+    "/api/Department/{id}": {
       "get": {
         "tags": [
-          "DepartmentApi"
+          "Department"
         ],
         "parameters": [
           {
@@ -130,7 +130,7 @@
       },
       "put": {
         "tags": [
-          "DepartmentApi"
+          "Department"
         ],
         "parameters": [
           {
@@ -170,7 +170,7 @@
       },
       "delete": {
         "tags": [
-          "DepartmentApi"
+          "Department"
         ],
         "parameters": [
           {
@@ -190,10 +190,10 @@
         }
       }
     },
-    "/api/DepartmentApi/{id}/employeeCount": {
+    "/api/Department/{id}/employeeCount": {
       "get": {
         "tags": [
-          "DepartmentApi"
+          "Department"
         ],
         "parameters": [
           {
@@ -233,10 +233,10 @@
         }
       }
     },
-    "/api/EmployeeApi": {
+    "/api/Employee": {
       "get": {
         "tags": [
-          "EmployeeApi"
+          "Employee"
         ],
         "responses": {
           "200": {
@@ -272,7 +272,7 @@
       },
       "post": {
         "tags": [
-          "EmployeeApi"
+          "Employee"
         ],
         "requestBody": {
           "content": {
@@ -317,10 +317,10 @@
         }
       }
     },
-    "/api/EmployeeApi/{id}": {
+    "/api/Employee/{id}": {
       "get": {
         "tags": [
-          "EmployeeApi"
+          "Employee"
         ],
         "parameters": [
           {
@@ -358,7 +358,7 @@
       },
       "put": {
         "tags": [
-          "EmployeeApi"
+          "Employee"
         ],
         "parameters": [
           {
@@ -398,7 +398,7 @@
       },
       "delete": {
         "tags": [
-          "EmployeeApi"
+          "Employee"
         ],
         "parameters": [
           {
@@ -418,10 +418,10 @@
         }
       }
     },
-    "/api/EmployeeApi/department/{departmentId}": {
+    "/api/Employee/department/{departmentId}": {
       "get": {
         "tags": [
-          "EmployeeApi"
+          "Employee"
         ],
         "parameters": [
           {
@@ -467,10 +467,10 @@
         }
       }
     },
-    "/api/EmployeeApi/count": {
+    "/api/Employee/count": {
       "get": {
         "tags": [
-          "EmployeeApi"
+          "Employee"
         ],
         "responses": {
           "200": {

@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "cwAP.DepartmentApiController",
+    "ContainingType": "cwAP.DepartmentController",
     "Method": "GetAllDepartments",
-    "RelativePath": "api/DepartmentApi",
+    "RelativePath": "api/Department",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "cwAP.DepartmentApiController",
+    "ContainingType": "cwAP.DepartmentController",
     "Method": "AddDepartment",
-    "RelativePath": "api/DepartmentApi",
+    "RelativePath": "api/Department",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "cwAP.DepartmentApiController",
+    "ContainingType": "cwAP.DepartmentController",
     "Method": "GetDepartmentById",
-    "RelativePath": "api/DepartmentApi/{id}",
+    "RelativePath": "api/Department/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "cwAP.DepartmentApiController",
+    "ContainingType": "cwAP.DepartmentController",
     "Method": "UpdateDepartment",
-    "RelativePath": "api/DepartmentApi/{id}",
+    "RelativePath": "api/Department/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -93,9 +93,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "cwAP.DepartmentApiController",
+    "ContainingType": "cwAP.DepartmentController",
     "Method": "DeleteDepartment",
-    "RelativePath": "api/DepartmentApi/{id}",
+    "RelativePath": "api/Department/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,9 +109,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "cwAP.DepartmentApiController",
+    "ContainingType": "cwAP.DepartmentController",
     "Method": "GetDepartmentEmployeeCount",
-    "RelativePath": "api/DepartmentApi/{id}/employeeCount",
+    "RelativePath": "api/Department/{id}/employeeCount",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -135,9 +135,9 @@
     ]
   },
   {
-    "ContainingType": "EmployeeApiController",
+    "ContainingType": "EmployeeController",
     "Method": "GetAllEmployees",
-    "RelativePath": "api/EmployeeApi",
+    "RelativePath": "api/Employee",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -155,9 +155,9 @@
     ]
   },
   {
-    "ContainingType": "EmployeeApiController",
+    "ContainingType": "EmployeeController",
     "Method": "AddEmployee",
-    "RelativePath": "api/EmployeeApi",
+    "RelativePath": "api/Employee",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -181,9 +181,9 @@
     ]
   },
   {
-    "ContainingType": "EmployeeApiController",
+    "ContainingType": "EmployeeController",
     "Method": "GetEmployeeById",
-    "RelativePath": "api/EmployeeApi/{id}",
+    "RelativePath": "api/Employee/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -207,9 +207,9 @@
     ]
   },
   {
-    "ContainingType": "EmployeeApiController",
+    "ContainingType": "EmployeeController",
     "Method": "UpdateEmployee",
-    "RelativePath": "api/EmployeeApi/{id}",
+    "RelativePath": "api/Employee/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -228,9 +228,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EmployeeApiController",
+    "ContainingType": "EmployeeController",
     "Method": "DeleteEmployee",
-    "RelativePath": "api/EmployeeApi/{id}",
+    "RelativePath": "api/Employee/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -244,9 +244,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EmployeeApiController",
+    "ContainingType": "EmployeeController",
     "Method": "GetEmployeeCount",
-    "RelativePath": "api/EmployeeApi/count",
+    "RelativePath": "api/Employee/count",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -264,9 +264,9 @@
     ]
   },
   {
-    "ContainingType": "EmployeeApiController",
+    "ContainingType": "EmployeeController",
     "Method": "GetEmployeesByDepartment",
-    "RelativePath": "api/EmployeeApi/department/{departmentId}",
+    "RelativePath": "api/Employee/department/{departmentId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

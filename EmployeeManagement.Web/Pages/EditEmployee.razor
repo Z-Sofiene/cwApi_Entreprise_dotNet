@@ -1,0 +1,68 @@
+﻿@page "/EditEmployee/{id}"
+@inherits EditEmployeeBase
+
+<h3 class="text-center my-4">Edit Employee</h3>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #FF9500, #00048B);
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+</style>
+
+<div class="container">
+    <EditForm Model="@Employee" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <InputText id="firstName" class="form-control" @bind-Value="Employee.FirstName" />
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <InputText id="lastName" class="form-control" @bind-Value="Employee.LastName" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <InputText id="email" class="form-control" @bind-Value="Employee.Email" />
+        </div>
+
+        <div class="form-group">
+            <label for="dateOfBirth">Date of Birth</label>
+            <InputDate id="dateOfBirth" class="form-control" @bind-Value="Employee.DateOfBirth" />
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <InputSelect id="gender" class="form-control" @bind-Value="Employee.Gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </InputSelect>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department</label>
+            <InputText id="department" class="form-control" @bind-Value="Employee.Department.DepartmentName" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary" @onclick="NavigateToEmployeeList">Cancel</button>
+
+    </EditForm>
+</div>

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "cwAPIdotNET.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
